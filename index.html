@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#background">Background</a></li>
+          <!-- <li><a href="#experience">Experience</a></li> -->
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Saurabh Rawat</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#background" onclick="toggleMenu()">Background</a></li>
+          <!-- <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> -->
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./Content/FB_n.png" alt="Saurabh Rawat profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Saurabh Rawat</h1>
+        <p class="section__text__p2">Master's student at IIIT Hyderabad</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./Content/Saurabh_Rawat_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">    
+          <img
+            src="./Content/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/saurabhrawat125/'"
+          />
+          <img
+            src="./Content/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/SaurabhRawat12/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="background">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title"> Life so far :)</h1>
+        <div class="section-container">
+          <div class="background-details-container">
+            <div class="text-container">
+              <p>Thanks for visiting! I'm Saurabh Rawat, born and raised in Kotdwar, a small town in Uttarakhand. I completed my schooling in Kotdwar before joining NIT Uttarakhand to pursue my Bachelor's in Electronics and Communication Engineering (ECE).</p>
+              
+              <p>Post-graduation, I worked as a Decision Analytics Associate at ZS Associates for 9 months. Despite the short stint, it was a rewarding experience working alongside some amazing minds.</p>
+              
+              <p>Since my Bachelor's, I've been passionate about theoretical Computer Science, which led me to pursue higher studies. I am currently pursuing my Master’s in Computer Science and Engineering (CSE) at IIIT Hyderabad.</p>
+              
+              <p>My hobbies include playing table tennis and sketching, although I haven't had much time to pursue them lately. I'm also fascinated by K-Dramas, particularly for their visuals and cinematography. This has inspired me to learn video editing and cinematography, and I hope to make good progress in this area soon.</p>
+            </div>
+            
+            <div class="background-containers">
+              <div class="details-container">
+                <img src="./Content/workex.png" alt="Background icon" class="icon" />
+                <h3>Experience</h3>
+                <p><h5>Decision Analytics Associate at ZS Associates (Jun 2021 - Mar 2022)</h5></p>
+                <p>Collaborated closely with clients to understand their business challenges and provided strategic recommendations based on data-driven insights to drive business growth and operational improvements.</p>
+              </div>
+      
+              <div class="details-container">
+                <img src="./Content/edu.png" alt="Education icon" class="icon" />
+                <h3>Education</h3>
+                <p>M Tech (CSE) - International Institute of Information Technology, Hyderabad (Ongoing)</p>
+                <p>B Tech (ECE) - National Institute of Technology, Uttarakhand (2017-2021)</p>
+                <p>HSC - Shri Guru Ram Rai Public School, Kotdwar (2015-2017)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./Content/down-double-arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+      </section>
+      
+    <!-- <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section> -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="background-details-container">
+        <div class="background-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Content/forgg.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="background-sub-title project-title">Project One</h2>
+            <p>Copy-Move-Forgery-Detection</p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SaurabhRawat12/Copy-Move-Forgery-Detection'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Content/medical.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="background-sub-title project-title">Project Two</h2>
+            <p>Medical-Chat-Bot</p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SaurabhRawat12/Machine-Learning/tree/master/Medical_Chat_Bot'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="background-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <img
+        src="./Content/down-double-arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./Content/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:saurabhrawat125@gmail.com">Saurabhrawat125@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./Content/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/saurabhrawat125/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img
+              src="./Content/fb.png"
+              alt="Facebook icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.facebook.com/profile.php?id=61560006425953">Facebook</a></p>
+          </div>
+          
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#background">Background</a></li>
+            <!-- <li><a href="#experience">Experience</a></li> -->
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Saurabh Rawat. All Rights Reserved.</p>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
